@@ -5,6 +5,7 @@ if [ $ID -ne 0 ]; then
     exit 1
 else
     echo "you are root user"
+fi
 
 sudo yum install mysql -y
 
@@ -13,3 +14,4 @@ if [ $? -ne 0 ]; then
     exit 2
 else
     echo "mysql is installed"
+fi
