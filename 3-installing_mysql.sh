@@ -23,7 +23,7 @@ else
 fi
 
 sudo yum install mysql -y &>> $LOGFILE
-$VALIDATE $? "mysql installation is"
+VALIDATE $? "mysql installation is"
 
 # if [ $? -ne 0 ]; then   
 #     echo "mysql iss not installed"
